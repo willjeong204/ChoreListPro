@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var date: UILabel!
     
     @IBAction func checkBoxTouched(_ sender: UIButton) {
-        let checkMark = UIImage(named: "checkmark.png") as UIImage!
+        let checkMark = UIImage(named: "checkmark") as UIImage!
         
         //sender.setImage(checkMark, for: .normal)
         sender.setBackgroundImage(checkMark, for: .normal)
