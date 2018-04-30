@@ -263,6 +263,7 @@
                     </view>
                     <connections>
                         <outlet property="checkButton" destination="PTL-IF-lyj" id="dSJ-aM-eSj"/>
+                        <outlet property="date" destination="zzg-1S-2bl" id="VtL-mk-jbX"/>
                         <outlet property="taskNameLabel" destination="7Wi-6X-mnt" id="AuC-nV-bGb"/>
                     </connections>
                 </viewController>
