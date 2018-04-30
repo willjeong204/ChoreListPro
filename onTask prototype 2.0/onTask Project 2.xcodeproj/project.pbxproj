@@ -14,6 +14,7 @@
 		C4888C682092745300E5C187 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4888C662092745300E5C187 /* LaunchScreen.storyboard */; };
 		C4888C732092745400E5C187 /* onTask_Project_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4888C722092745400E5C187 /* onTask_Project_2Tests.swift */; };
 		C4888C7E2092745400E5C187 /* onTask_Project_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4888C7D2092745400E5C187 /* onTask_Project_2UITests.swift */; };
+		CB215F9F2097B46400BE549B /* launchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = CB215F9E2097B46400BE549B /* launchScreen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C4888C792092745400E5C187 /* onTask Project 2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "onTask Project 2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4888C7D2092745400E5C187 /* onTask_Project_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onTask_Project_2UITests.swift; sourceTree = "<group>"; };
 		C4888C7F2092745400E5C187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB215F9E2097B46400BE549B /* launchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchScreen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				C4888C5F2092745300E5C187 /* ViewController.swift */,
 				C4888C612092745300E5C187 /* Main.storyboard */,
 				C4888C642092745300E5C187 /* Assets.xcassets */,
+				CB215F9E2097B46400BE549B /* launchScreen.png */,
 				C4888C662092745300E5C187 /* LaunchScreen.storyboard */,
 				C4888C692092745300E5C187 /* Info.plist */,
 			);
@@ -234,6 +237,7 @@
 			files = (
 				C4888C682092745300E5C187 /* LaunchScreen.storyboard in Resources */,
 				C4888C652092745300E5C187 /* Assets.xcassets in Resources */,
+				CB215F9F2097B46400BE549B /* launchScreen.png in Resources */,
 				C4888C632092745300E5C187 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

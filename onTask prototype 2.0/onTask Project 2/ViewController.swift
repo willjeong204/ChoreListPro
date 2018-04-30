@@ -17,9 +17,16 @@ class ViewController: UIViewController {
     @IBAction func checkBoxTouched(_ sender: UIButton) {
         let checkMark = UIImage(named: "checkmark") as UIImage!
         
-        //sender.setImage(checkMark, for: .normal)
-        sender.setBackgroundImage(checkMark, for: .normal)
-        sender.backgroundColor = UIColor.white
+        if sender.backgroundImage(for: .normal) != nil{
+            sender.setBackgroundImage(nil, for: .normal)
+            
+        }
+        else{
+            sender.setBackgroundImage(checkMark, for: .normal)
+            
+        }
+        
+        
     }
     
     override func viewDidLoad() {
