@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1314" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,7 +23,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wK1-96-C2K" userLabel="background">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" red="0.2427339963" green="0.72336632010000002" blue="0.62950987920000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.16686856746673584" green="0.64562410116195679" blue="0.93243938684463501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ydk-Ya-FZL" userLabel="Root Stack View">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
@@ -36,7 +36,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkL-3Y-cya">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
-                                                        <color key="backgroundColor" red="0.31624075576782706" green="1" blue="0.89640271453124809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.16686856746673584" green="0.64562410116195679" blue="0.93243938684463501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="Myp-Vc-1vg"/>
                                                         </constraints>
@@ -46,7 +46,7 @@
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzg-1S-2bl">
                                                         <rect key="frame" x="80" y="0.0" width="215" height="40"/>
-                                                        <color key="backgroundColor" red="0.3162407558" green="1" blue="0.89640271449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.16686856746673584" green="0.64562410116195679" blue="0.93243938684463501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="215" id="Emh-O7-QWj"/>
                                                         </constraints>
@@ -56,7 +56,7 @@
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5h-3L-8fm">
                                                         <rect key="frame" x="295" y="0.0" width="80" height="40"/>
-                                                        <color key="backgroundColor" red="0.3162407558" green="1" blue="0.89640271449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.16686856746673584" green="0.64562410116195679" blue="0.93243938684463501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="LOT-4A-pZJ"/>
                                                         </constraints>
@@ -263,7 +263,6 @@
                     </view>
                     <connections>
                         <outlet property="checkButton" destination="PTL-IF-lyj" id="dSJ-aM-eSj"/>
-                        <outlet property="removeButton" destination="PTL-IF-lyj" id="lBI-Ar-ier"/>
                         <outlet property="taskNameLabel" destination="7Wi-6X-mnt" id="AuC-nV-bGb"/>
                     </connections>
                 </viewController>

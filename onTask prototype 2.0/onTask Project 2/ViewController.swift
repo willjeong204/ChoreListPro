@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var taskNameLabel: UIButton!
+    @IBOutlet weak var checkButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +22,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBOutlet weak var taskNameLabel: UIButton!
-    @IBOutlet weak var checkButton: UIButton!
+   
     
     @IBAction func checkButtonTapped(_ sender: UIButton) {
         checkButton.setImage(UIImage(named: "checkmark"), for: .normal)
