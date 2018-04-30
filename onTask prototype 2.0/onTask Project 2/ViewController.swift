@@ -11,16 +11,22 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var taskNameLabel: UIButton!
-    @IBOutlet weak var checkButton: UIButton!
+
     @IBOutlet weak var date: UILabel!
+    
+    @IBAction func checkBoxTouched(_ sender: UIButton) {
+        let checkMark = UIImage(named: "checkmark.png") as UIImage!
+        
+        //sender.setImage(checkMark, for: .normal)
+        sender.setBackgroundImage(checkMark, for: .normal)
+        sender.backgroundColor = UIColor.white
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.checkButtonTapped(checkButton)
         let currDate = Date()
-        
         self.date.text = currDate.toString(dateFormat: "dd-MMM-yyyy")
 
     }
@@ -28,11 +34,6 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-   
-    
-    @IBAction func checkButtonTapped(_ sender: UIButton) {
-        checkButton.setImage(UIImage(named: "checkmark.png"), for: .normal)
     }
     
     

@@ -85,28 +85,21 @@
                                                         <state key="normal" image="dishes"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wi-6X-mnt">
-                                                        <rect key="frame" x="80" y="0.0" width="215" height="50"/>
+                                                        <rect key="frame" x="80" y="0.0" width="147.5" height="50"/>
                                                         <state key="normal" title="Wash Dishes">
                                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTL-IF-lyj" userLabel="Check Button">
-                                                        <rect key="frame" x="295" y="0.0" width="80" height="50"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="80" id="djK-IR-U9N"/>
-                                                        </constraints>
-                                                        <state key="normal">
-                                                            <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QW-iS-2V5">
+                                                        <rect key="frame" x="227.5" y="0.0" width="147.5" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <connections>
-                                                            <action selector="checkButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kDU-em-lRd"/>
-                                                            <action selector="checkButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sxp-Ed-1E6"/>
-                                                            <action selector="removeButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pUs-YD-w9f"/>
+                                                            <action selector="checkBoxTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f2r-Gj-JuU"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
+                                                    <constraint firstItem="3QW-iS-2V5" firstAttribute="width" secondItem="7Wi-6X-mnt" secondAttribute="width" id="7QM-xu-H8O"/>
                                                     <constraint firstAttribute="height" constant="50" id="zy4-zK-qLw"/>
                                                 </constraints>
                                             </stackView>
@@ -121,23 +114,21 @@
                                                         <state key="normal" image="Trash"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obz-eu-2ud">
-                                                        <rect key="frame" x="80" y="0.0" width="215" height="50"/>
+                                                        <rect key="frame" x="80" y="0.0" width="147.5" height="50"/>
                                                         <state key="normal" title="Empty Kitchen Trash">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqQ-nq-qdS" userLabel="Check Button">
-                                                        <rect key="frame" x="295" y="0.0" width="80" height="50"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="80" id="39W-Yg-DHs"/>
-                                                        </constraints>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4Q-NU-yKG">
+                                                        <rect key="frame" x="227.5" y="0.0" width="147.5" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <connections>
-                                                            <action selector="checkButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Au0-z4-8Y2"/>
+                                                            <action selector="checkBoxTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ode-Tj-kwW"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
+                                                    <constraint firstItem="n4Q-NU-yKG" firstAttribute="width" secondItem="Obz-eu-2ud" secondAttribute="width" id="CRi-xh-wsI"/>
                                                     <constraint firstAttribute="height" constant="50" id="YNP-8H-cds"/>
                                                 </constraints>
                                             </stackView>
@@ -224,9 +215,6 @@
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="UNd-hh-TD2"/>
-                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <constraints>
@@ -238,11 +226,9 @@
                                 <constraints>
                                     <constraint firstItem="PJs-x4-rcx" firstAttribute="leading" secondItem="Ydk-Ya-FZL" secondAttribute="leading" id="1ZL-3K-nT3"/>
                                     <constraint firstAttribute="trailing" secondItem="PJs-x4-rcx" secondAttribute="trailing" id="2ME-Fq-eEK"/>
-                                    <constraint firstItem="ahN-7K-FdI" firstAttribute="top" secondItem="PJs-x4-rcx" secondAttribute="bottom" constant="80" id="5zc-tU-ShP"/>
                                     <constraint firstAttribute="bottom" secondItem="ahN-7K-FdI" secondAttribute="bottom" id="JsZ-04-kMd"/>
                                     <constraint firstItem="JEi-WE-aeb" firstAttribute="top" secondItem="Ydk-Ya-FZL" secondAttribute="top" id="Oni-BC-BQG"/>
                                     <constraint firstItem="ahN-7K-FdI" firstAttribute="leading" secondItem="Ydk-Ya-FZL" secondAttribute="leading" id="PmA-bM-xfr"/>
-                                    <constraint firstItem="PJs-x4-rcx" firstAttribute="top" secondItem="JEi-WE-aeb" secondAttribute="bottom" constant="40" id="lEB-Jg-sOZ"/>
                                     <constraint firstAttribute="trailing" secondItem="ahN-7K-FdI" secondAttribute="trailing" id="n7c-0f-lhU"/>
                                     <constraint firstAttribute="trailing" secondItem="JEi-WE-aeb" secondAttribute="trailing" id="ulW-be-3VU"/>
                                     <constraint firstItem="JEi-WE-aeb" firstAttribute="leading" secondItem="Ydk-Ya-FZL" secondAttribute="leading" id="yF5-oT-V42"/>
@@ -251,9 +237,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ydk-Ya-FZL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0NL-YW-zLD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ydk-Ya-FZL" secondAttribute="bottom" id="5Pt-i0-i7P"/>
-                            <constraint firstAttribute="trailing" secondItem="Ydk-Ya-FZL" secondAttribute="trailing" id="BTj-c2-vLu"/>
+                            <constraint firstItem="Ydk-Ya-FZL" firstAttribute="leading" secondItem="wK1-96-C2K" secondAttribute="leading" id="8hn-25-0xE"/>
                             <constraint firstItem="Ydk-Ya-FZL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GPP-Sm-ee2"/>
                             <constraint firstItem="wK1-96-C2K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="k41-HY-f4X"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wK1-96-C2K" secondAttribute="bottom" id="lCh-1n-HY5"/>
@@ -262,7 +247,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="checkButton" destination="PTL-IF-lyj" id="dSJ-aM-eSj"/>
                         <outlet property="date" destination="zzg-1S-2bl" id="VtL-mk-jbX"/>
                         <outlet property="taskNameLabel" destination="7Wi-6X-mnt" id="AuC-nV-bGb"/>
                     </connections>
