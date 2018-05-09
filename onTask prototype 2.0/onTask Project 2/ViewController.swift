@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let elements = ["broom", "cook", "dishes", "fold laundry", "litterbox", "make bed", "mop floor", "toilet", "trash"]
+    let elements = ["broom", "cook", "dishes", "fold laundry", "litterbox"]
     let users = ["UserA", "UserB", "UserC"]
     
     @IBOutlet weak var tableView: UITableView!
@@ -22,13 +22,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         finished = !finished
         if finished{
             sender.setImage(UIImage(named: "done button 60x60"), for: .normal)
-
+            
         }
         else{
             sender.setImage(UIImage(named: "addandedit.png"), for: .normal)
 
         }
     }
+    
     
     
     override func viewDidLoad() {

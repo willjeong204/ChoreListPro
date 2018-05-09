@@ -19,11 +19,14 @@ class CustomTableViewCell: UITableViewCell {
     var checked = false;
     let checkMark = UIImage(named: "checked box") as UIImage!
     let uncheckMark = UIImage(named: "unchecked box") as UIImage!
-    
+    let removeButton = UIImage(named: "remove button") as UIImage!
     var editting = false
+    
     @IBAction func edditingFunction(_ sender: UIButton) {
         
+        
     }
+    
     
     
     @IBAction func checkButton(_ sender: UIButton) {
