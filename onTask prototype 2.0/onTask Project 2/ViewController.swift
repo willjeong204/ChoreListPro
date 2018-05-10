@@ -10,12 +10,29 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let elements = ["broom", "cook", "dishes", "fold laundry", "litterbox"]
+    var elements = ["broom", "cook", "dishes", "fold laundry", "litterbox"]
     let users = ["UserA", "UserB", "UserC"]
     
+    @IBOutlet weak var addTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var date: UILabel!
     
+    @IBAction func addButton(_ sender: UIButton) {
+        insertRow()
+    }
+    
+    func insertRow(){
+        elements.append(addTextField.text!)
+        let indexPath = IndexPath(row: elements.count - 1, section: 0)
+        
+        tableView.beginUpdates()
+        tableView.insertRows(at: [indexPath], with: .automatic)
+        tableView.endUpdates()
+        
+        addTextField.text = "Enter Text"
+        
+        
+    }
     var finished = false
     
     @IBAction func addRemove(_ sender: UIButton) {
@@ -64,8 +81,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
     
-    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete{
+            elements.remove(at: indexPath.row)
+            tableView.beginUpdates()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            tableView.endUpdates()
+        }
+    }
     
 }
 
